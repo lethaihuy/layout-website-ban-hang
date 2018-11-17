@@ -1,0 +1,110 @@
+body {
+	background-color:  #f0f0f5;
+}
+
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.content{
+	position: relative;
+	margin: 100px auto 0;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+	margin: 100px 300px;
+}
+
+form {
+	box-sizing: border-box;
+	width: 300px;
+	height: 379px;
+	background: #fff;
+}
+form h1 {
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 40px;
+	color: #fff;
+	background: #1abc9c;
+	margin-top: 0;
+}
+
+input {
+	margin: 40px 25px;
+	width: 250px;
+	display: block;
+	border: none;
+	padding-top: 5px;
+	border-bottom: solid 1px #1abc9c;
+	transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+	background-position: -250px 0;
+	background-size: 250px 100%;
+	background-repeat: no-repeat;
+	color: #0e6252;
+	height: 40px;
+	font-size: 16px;
+}
+
+input:hover, input:valid{
+	box-shadow: none;
+	outline: none;
+	background-position: 0 0;
+}
+
+input:hover::-webkit-input-placeholder, input:valid::-webkit-input-placeholder{
+	color: #1abc9c;
+	font-size: 13px;
+	transform: translateY(-20px);
+}
+
+input:focus, input:valid{
+	box-shadow: none;
+	outline: none;
+	background-position: 0 0;
+}
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+	color: #1abc9c;
+	font-size: 13px;
+	transform: translateY(-20px);
+	visibility: visible !important;
+}
+
+#address{
+	height: 50px;
+}
+
+button {
+	border: none;
+	background: #1abc9c;
+	cursor: pointer;
+	border-radius: 3px;
+	padding: 6px;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	color: white;
+	margin-left: 25px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+	padding: 0px auto;
+	margin: 20px 50px;	
+}
+button:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img-fluid{
+	position: relative;
+	width: 450px;
+	height: 379px;
+}
+
+.content{
+	position: relative;
+	display: inline-flex;
+	float: left;
+	margin: 100px auto 0;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+	margin: 100px 300px;
+}

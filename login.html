@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+
+	<link rel="stylesheet" href="css/styleLogin.css">	
+
+</head>
+
+<body>
+	<div class="content">
+		<div class="logo">
+			<img class="img-fluid" src="img/logo3.jpg"">
+		</div>
+		<form id="fLogin" name="fLogin" action="Home.html" method="POST">
+			<h1>Sign in</h1>
+			<input placeholder="Username*" id="username" name="username" type="text" required autofocus>
+			<input placeholder="Password*" id="password" name="password" type="password" required>
+			<button type="submit" onclick="return onFormSubmit();" >Sign in</button>
+			<a href="http://www.google.com" class="text-muted small" style="color: #80b3ff; margin-left: 25px;">Forgot my password?</a>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="vendor/checklogin.js"></script>
+</body>
+</html>

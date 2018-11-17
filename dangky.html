@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ĐĂNG KÝ</title>
+	<link rel="stylesheet" href="css/styledangky.css">	
+	
+</head>
+<body>
+	<center>
+		<form id="fDangKy" name="fDangKy" action="Home.html" method="get">
+			<h1>ĐĂNG KÝ NHẬN TIN</h1>
+
+			<input type="text" id="name" name="name" placeholder="Họ và tên*" required>
+			<select id="sex">
+				<option selected>Giới tính</option>
+				<option>Nam</option>
+				<option>Nữ</option>
+			</select>
+			<input placeholder="Điện thoại*" id="phone" name="phone" type="text" required>
+			<input placeholder="Email*" id="email" name="email" type="text" required>
+			<textarea rows="4" cols="50" placeholder="Địa chỉ"></textarea>
+			<button type="submit" onclick="return checkDangKy();">Đăng ký</button>
+		</form>
+	</center>
+	<script>
+		function checkDangKy(){
+			if(document.fDangKy.name.value==''){
+				alert('Chưa nhập tên!');
+				document.fDangKy.name.focus();
+				return false;
+			}
+			if(document.fDangKy.phone.value==''){
+				alert('Chưa nhập số diện thoại!');
+				document.fDangKy.phone.focus();
+				return false;
+			}
+			if(document.fDangKy.email.value==''){
+				alert('Chưa nhập email!');
+				document.fDangKy.email.focus();
+				return false;
+			}
+			else{
+				alert('Chúc mừng bạn đã đăng ký thành công!');
+				return true;
+			}		
+		}
+	</script>
+</body>
+</html>
